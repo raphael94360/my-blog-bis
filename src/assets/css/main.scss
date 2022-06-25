@@ -1,9 +1,16 @@
+@import "./media.scss";
+
 .content {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   gap: 1.5rem;
   margin-top: 20px;
   background-color: #eee;
+
+  @include large {
+    flex-direction: row;
+  }
   
   &-main {
     
@@ -11,6 +18,7 @@
       background-color: white;
       padding: 20px;
       margin-bottom: 20px;
+      max-width: 940px;
     }
 
     &--item h3 {
@@ -27,7 +35,7 @@
     &--item img {
       object-fit: cover;
       object-position: center;
-      min-width: 900px;
+      min-width: 300px;
       max-height: 300px;
       background-color: #ddd;
       margin-bottom: 20px;
@@ -43,7 +51,11 @@
   &-side {
     background-color: white;
     padding: 20px;
-    height: 250px;
+    max-width: 100%;
+
+    @include large {
+      height: 300px;
+    }
 
     h3 {
       font-size: 1.2rem;
@@ -54,10 +66,9 @@
     img {
       object-fit: cover;
       object-position: center;
-      min-width: 230px;
+      min-width: 300px;
       max-height: 230px;
       background-color: #ddd;
-      height: 150px;
       margin-bottom: 20px;
     }
 
