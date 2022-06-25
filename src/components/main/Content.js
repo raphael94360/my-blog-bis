@@ -1,5 +1,5 @@
-import MainContent from "./mainContent/MainContent";
-import SideContent from "./sideContent/SideContent";
+import MainContent from "./MainContent";
+import SideContent from "./SideContent";
 
 const Main = () => {
   return(

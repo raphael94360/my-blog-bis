@@ -1,6 +1,67 @@
 .content {
   display: flex;
   justify-content: space-between;
+  gap: 1.5rem;
   margin-top: 20px;
-  background-color: #ddd;
+  background-color: #eee;
+  
+  &-main {
+    
+    &--item {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    &--item h3 {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    &--item h4 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    &--item div {
+      width: 900px;
+      height: 150px;
+      background-color: #ddd;
+      margin-bottom: 20px;
+    }
+
+    &--item p {
+      max-width: 900px;
+      font-size: 1rem;
+      line-height: 1.3rem;
+    }
+  }
+
+  &-side {
+    background-color: white;
+    padding: 20px;
+    height: 250px;
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    div {
+      min-width: 150px;
+      background-color: #ddd;
+      height: 150px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      max-width: 900px;
+      font-size: 1rem;
+      line-height: 1.3rem;
+    }
+  }
+
+
 }

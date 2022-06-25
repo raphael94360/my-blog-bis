@@ -1,7 +1,9 @@
+import Item from "./Item";
+
 const MainContent = () => {
   return(
     <div className="content-main">
-      <p> MainContent </p>
+      <Item />
     </div>
   )
 }
