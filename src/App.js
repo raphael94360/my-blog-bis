@@ -1,8 +1,11 @@
 import './App.scss';
+import Header from './components/header/Header';
 
 function App() {
   return (
-    <div> HELLO WORLD </div>
+    <div className='container'>
+      <Header />
+    </div>
   );
 }
 
