@@ -1,12 +1,12 @@
 import ItemTitle from "./ItemTitle";
-import ItemPicture from "./ItemPicture";
 import ItemDescription from "./ItemDescription";
+import about from "../img/about.jpg";
 
 const AboutMe = () => {
   return(
     <>
       <ItemTitle title={"ABOUT ME"}/>
-      <ItemPicture picture={"IMG"}/>
+      <img alt="about" src={about}/>
       <ItemDescription description={"dummy text ever since the 1500s"}/>
     </>
   )
