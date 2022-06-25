@@ -6,8 +6,14 @@
   background-color: #ddd;
 
   p {
+    font-size: 0.8rem;
+    
+    @include small {
     font-size: 1.1rem;
+    }
   }
+
+
 
   span {
     font-weight: bold;
